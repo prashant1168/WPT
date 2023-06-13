@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="C:\Users\asus\OneDrive - IITRAM\Desktop\WPTREV\9-May-2023\9-may\jquery-3.7.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#i1").click(function(){
+                    $("#d2").fadeOut(2000)
+                    $("#d3").fadeIn("slow")
+                    $("#d4").fadeIn(2000)
+
+                });
+                $("d1").slideUp(2000)
+            });
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Click to fade in boxes" id="i1">
+        <div id="d1" style="height: 80px;width: 80px;">pppppppppppppppppppppppppppppppppppp</div>
+        <div id="d2" style="background-color: orange;height: 80px;width: 80px;"></div><br>
+        <div id="d3" style="background-color: blue;height: 80px;width: 80px;"></div><br>
+        <div id="d4" style="background-color: green;height: 80px;width: 80px;"></div>
+    </body>
+</html>

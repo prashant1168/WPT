@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="C:\Users\asus\OneDrive - IITRAM\Desktop\WPTREV\9-May-2023\9-may\jquery-3.7.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#i1").click(function(){
+                let x=$("#d1").data("mylines")
+                let str=$("#d1").text()
+                let len=str.length
+                let finalstr=""
+                let a=0
+                let b=length/x
+                for(i=0;i<x;i++){
+                    let part=str.slice(a,b)
+                    finalstr=finalstr.concat(part+"<br>")
+                    a=b
+                    b=length/x
+                }
+                $("p").html(finalstr)
+            })
+            $("#i1").click(function(){
+                let y=$("#d1").data("mylines")
+                $("#d1").data("mylines",y+1)
+            })
+
+        })
+        </script>
+    </head>
+    <body>
+        <div id="d1">Waves rising as high as 9.2 metres, gale force winds which can touch upto 160 kmph, storm surges of upto three metres, and heavy rainfall have been forecast across regions of Gujarat, including Kutch, Devbhumi Dwarka, Porbandar, Jamnagar, Rajkot, Junagarh and Morbi districts, in a joint bulletin issued by the India Meteorological Department, and India National Centre for Ocean Information Services (INCOIS) on June 13 afternoon.</div>
+        <input type="button" value="click" id="i1">
+        <p></p>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="C:\Users\asus\OneDrive - IITRAM\Desktop\WPTREV\9-May-2023\9-may\jquery-3.7.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                for(let i=0;i<10;i++){
+                    $("#s1").append(`<option value=${i}>text of option no ${i}</option>`)
+                    $("#i1").click(function(){
+                    
+                    let v=$("#s1").val()
+                    $("#p1").html("")
+                    console.log(v)
+                    for(i=0;i<v;i++){
+                        $("#p1").append(`<p>Hello</p>`)
+                    }
+                })
+                }
+            })
+        </script>
+    </head>
+    <body>
+        <select id="s1"></select>
+        <input type="button" value="click" id="i1"/>
+        <div id="p1"></div>
+    </body>
+</html>

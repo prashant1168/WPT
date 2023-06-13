@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="C:\Users\asus\OneDrive - IITRAM\Desktop\WPTREV\9-May-2023\9-may\jquery-3.7.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#i2").click(function(){
+                    let d=new Date()
+                    let h=d.getHours()
+                    let m=d.getMinutes()
+                    let s=d.getSeconds()
+                    let time=h+":"+m+":"+s
+                    $("#i1").val(time)
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <label for="i1">Current Time</label>
+        <input type="text" id="i1">
+        <input type="button" id="i2" value="Click">
+    </body>
+</html>
