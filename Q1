@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                let element1=document.getElementById("i1")
+                let element2=document.getElementById("i2")
+                
+                let uname=element1.value 
+                let pass=element2.value
+
+                if(uname=="iet" && pass== 123){
+                    document.getElementById("p1").innerText="Welcome"
+                }
+                else if(uname=="cdac" && pass==456){
+                    document.getElementById("p1").innerText=`Welcome`
+                }
+                else if(uname=="software" && pass==789){
+                    document.getElementById("p1").innerText="Welcome"
+                }
+                else{
+                    document.getElementById("p2").innerText="ERROR"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="f1">
+            Username:
+            <input type="text" id="i1"  />
+            Password:
+            <input type="password" id="i2" />
+            <button id="b1" onclick="f1()">Login</button>
+        </form>
+        <p id="p1"></p>
+        <p id="p2" style="color:red"></p>
+    </body>
+</html>
